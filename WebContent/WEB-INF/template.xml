@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+  
+  <!-- admin -->
+  <definition name="admin.template" template="/WEB-INF/templates/admin/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/admin/header.jsp" />
+    <put-attribute name="content" value="" />
+    <put-attribute name="footer" value="/WEB-INF/templates/admin/footer.jsp" />
+  </definition>
+  
+  <!-- index -->
+  <definition name="admin.admin.index" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/index.jsp" />
+  </definition>
+  
+  <!-- place index -->
+  <definition name="admin.place.index" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/place/index.jsp" />
+  </definition>
+  
+  <!-- place add -->
+  <definition name="admin.place.add" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/place/add.jsp" />
+  </definition>
+  
+  <!-- place edit -->
+  <definition name="admin.place.edit" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/place/edit.jsp" />
+  </definition>
+  
+  <!-- <definition name="admin.news.edit" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/news/edit.jsp" />
+  </definition>
+  
+  <definition name="admin.news.add" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/news/add.jsp" />
+  </definition>
+  
+  cat
+  <definition name="admin.cat.index" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/cat/index.jsp" />
+  </definition>
+  
+  <definition name="admin.cat.edit" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/cat/edit.jsp" />
+  </definition>
+  
+  <definition name="admin.cat.add" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/cat/add.jsp" />
+  </definition>
+  
+  users
+  <definition name="admin.users.index" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/users/index.jsp" />
+  </definition>
+  
+  <definition name="admin.users.edit" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/users/edit.jsp" />
+  </definition>
+  
+  <definition name="admin.users.add" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/admin/users/add.jsp" />
+  </definition>
+
+  login
+  <definition name="admin.template" template="/WEB-INF/templates/admin/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/admin/header.jsp" />
+    <put-attribute name="content" value="" />
+    <put-attribute name="footer" value="/WEB-INF/templates/admin/footer.jsp" />
+  </definition> -->
+  
+  <definition name="cnews.auth.login" extends="admin.template">
+    <put-attribute name="content" value="/WEB-INF/jsp/auth/login.jsp" />
+  </definition>
+  
+  <definition name="cnews.auth.er403" template="/WEB-INF/jsp/auth/er403.jsp">
+  </definition>
+</tiles-definitions>
